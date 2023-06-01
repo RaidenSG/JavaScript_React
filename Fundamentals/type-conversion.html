@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type conversion</title>
+</head>
+<body>
+    
+    <script>
+        // let num1 = prompt("Enter first number")   //2
+        // let num2 = prompt("Enter second number")  //1     //String value
+        // let sum = num1+num2
+        // document.write(`Sum of ${num1} and ${num2} =  ${sum}`)   //21
+        
+        // pre-ES6 - Method
+        // let num1 = parseInt(prompt("Enter first number"))  
+        // let num2 = parseInt(prompt("Enter second number"))
+        // document.write(`Sum of ${num1} and ${num2} =  ${num1 + num2}`)
+
+
+        // post-ES6 Method
+        // let num1 = Number(prompt("Enter first number"))
+        // let num2 = Number(prompt("Enter second number"))  
+        // document.write(`Sum of ${num1} and ${num2} =  ${num1 + num2}`)
+        
+        //          ORRRRRRRR
+        
+        // let num1 = prompt("Enter first number")
+        // let num2 = prompt("Enter second number")  
+        // let sum = Number(num1)+Number(num2)
+        // document.write(`Sum of ${num1} and ${num2} =  ${Number(num1)+Number(num2)}`)
+
+        // latest Method
+        let num1 = +prompt("Enter first number:")
+        let num2 = +prompt("Enter second number:");
+        document.write(`Sum of ${num1} and ${num2} =  ${+num1 + +num2}`)
+
+    </script>
+</body>
+</html>
