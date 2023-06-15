@@ -14,7 +14,7 @@
 
 
 
-// const mainHeading = document.querySelector('#intro')
+const mainHeading = document.querySelector('#intro')
 // const list1 = document.querySelector('.fruit')
 
 // //Manipulation the DOM
@@ -32,8 +32,23 @@
 // console.log(mainHeading.textContent)
 // console.log(mainHeading.innerText)
 
-const anotherList = document.createElement('li')
-anotherList.textContent = 'Dragonfruit'
-anotherList.classList.add('fruit')
-document.getElementById('uList').appendChild(anotherList)
+
+/////Adding , removing, toggling class to the element or node
+
+// mainHeading.classList.add('hide')
+// // mainHeading.classList.remove('hide')
+
+// mainHeading.classList.replace('hide','transform')
+
+
+//////  Creating element using DOM
+
+// const anotherHeading = document.createElement('h2')
+// anotherHeading.textContent = 'Another Heading'
+// document.body.appendChild(anotherHeading)
+
+// const list = document.getElementById('aFruit')
+const lilist = document.createElement('li')
+lilist.textContent = 'Dragonfruit'
+document.getElementById('aFruit').appendChild(lilist)
 
