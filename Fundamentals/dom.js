@@ -48,7 +48,20 @@ const mainHeading = document.querySelector('#intro')
 // document.body.appendChild(anotherHeading)
 
 // const list = document.getElementById('aFruit')
-const lilist = document.createElement('li')
-lilist.textContent = 'Dragonfruit'
-document.getElementById('aFruit').appendChild(lilist)
+// const lilist = document.createElement('li')
+// lilist.textContent = 'Dragonfruit'
+// document.getElementById('aFruit').appendChild(lilist)
 
+mainHeading.style.cursor = 'pointer'
+mainHeading.addEventListener('click', ()=>{
+    const text = 'Added event listener'
+    alert(text)
+})
+
+const list = document.getElementsByClassName('.fruit')
+
+list.style.cursor = 'pointer'
+list.addEventListener('click', ()=>{
+    const ft = list.textContent
+    alert(ft)
+})
