@@ -96,16 +96,19 @@ mainHeading.addEventListener('mouseout',()=>{
     mainHeading.textContent = lowerCaseData
 })
 
-const list = document.querySelectorAll('.fruit')
-list.forEach((e=>{
-    e.addEventListener('mouseover',()=>{
-        let data = e.textContent
-        let upper = data.toUpperCase()
-        e.textContent = upper
-    })
-    e.addEventListener('mouseout',()=>{
-        let data = e.textContent
-        let lower = data.toLowerCase()
-        e.textContent = lower
-    })
-}))
+// const list = document.querySelectorAll('.fruit')
+// list.forEach((e=>{
+//     e.addEventListener('mouseover',()=>{
+//         let data = e.textContent
+//         let upper = data.toUpperCase()
+//         e.textContent = upper
+//     })
+//     e.addEventListener('mouseout',()=>{
+//         let data = e.textContent
+//         let lower = data.toLowerCase()
+//         e.textContent = lower
+//     })
+// }))
+
+
+console.log(document.getElementById('intro').innerHTML = `This is changed using inner HTML`)

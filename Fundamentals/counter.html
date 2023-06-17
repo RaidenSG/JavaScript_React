@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <button id="btn-1">-</button>
+    <h2>0</h2>
+    <button id="btn-2">+</button><br>
+    <button id="reset">Reset</button>
+
+    <script>
+        const decrease = document.querySelector('#btn-1')
+        const increase = document.querySelector('#btn-2')
+        const number = document.querySelector('h2')
+        const reset = document.querySelector('#reset')
+
+        let count = 0
+        decrease.addEventListener('click',()=>{
+            let num1 = number.textContent - 1
+            // count--
+            number.textContent = num1
+        })
+
+        increase.addEventListener('click',()=>{
+            let num2 = +number.textContent + 1
+            // count++
+            number.textContent = +num2
+        })
+
+        reset.addEventListener( 'click',()=>{
+            number.textContent = 0
+            count = 0
+        } )
+    </script>
+</body>
+</html>
