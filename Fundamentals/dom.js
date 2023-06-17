@@ -52,16 +52,60 @@ const mainHeading = document.querySelector('#intro')
 // lilist.textContent = 'Dragonfruit'
 // document.getElementById('aFruit').appendChild(lilist)
 
-mainHeading.style.cursor = 'pointer'
-mainHeading.addEventListener('click', ()=>{
-    const text = 'Added event listener'
-    alert(text)
+
+// const add = document.querySelector('#aFruit')
+// const liste = document.createElement('li')
+// liste.textContent = 'mototbike'
+// add.appendChild(liste)
+
+// mainHeading.style.cursor = 'pointer'
+// mainHeading.addEventListener('click', ()=>{
+//     const text = 'MouseOver'
+//     alert(text)
+// })
+
+/// NodeLists
+// const lists = document.querySelectorAll('.fruit')
+// lists.forEach((e,i,nl)=>{
+//     e.addEventListener('click', ()=>{
+//         let data = e.textContent
+//         alert(data)
+//     })
+// })
+// console.log(lists)
+
+
+
+// const list = document.querySelectorAll('.fruit')
+// list.forEach(e=>{
+//     e.addEventListener('click', ()=>{
+//         let show = e.textContent
+//         let data = show.toUpperCase()
+//         alert(data)
+//     })
+// })
+let text = mainHeading.textContent
+mainHeading.addEventListener('mouseover',()=>{
+    let data = text
+    let uppercasedata = data.toUpperCase()
+    mainHeading.textContent = uppercasedata
+})
+mainHeading.addEventListener('mouseout',()=>{
+    let data = text
+    let lowerCaseData = data.toLowerCase()
+    mainHeading.textContent = lowerCaseData
 })
 
-const list = document.getElementsByClassName('.fruit')
-
-list.style.cursor = 'pointer'
-list.addEventListener('click', ()=>{
-    const ft = list.textContent
-    alert(ft)
-})
+const list = document.querySelectorAll('.fruit')
+list.forEach((e=>{
+    e.addEventListener('mouseover',()=>{
+        let data = e.textContent
+        let upper = data.toUpperCase()
+        e.textContent = upper
+    })
+    e.addEventListener('mouseout',()=>{
+        let data = e.textContent
+        let lower = data.toLowerCase()
+        e.textContent = lower
+    })
+}))
