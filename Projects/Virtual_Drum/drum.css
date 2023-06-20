@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#head{
+    background-color: red;
+    width: 180px;
+    margin: 15px auto;
+    padding: 10px;
+}
+.drum_set{
+    /* background-color: red; */
+    width: 80%;
+   position: relative;
+   top: 140px;
+   left: 150px;
+}
+button{
+    /* cursor: pointer; */
+    font-size: 2rem;
+    margin: 5px 10px;
+    padding: 20px 30px;
+    height: 170px;
+    width: 150px;
+    /* box-shadow: 10px 7px 20px; */
+    /* border: 1px solid black; */
+    border-radius: 10px;
+}
