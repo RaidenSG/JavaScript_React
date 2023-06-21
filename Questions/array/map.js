@@ -11,9 +11,9 @@
 // const roll = students.map((e,i) => `Roll no : ${i+1} ${e}`)
 // console.log(roll)
 
-// const arr = [1,2,3,4,5]
-// const ans = arr.map((e,i) => e*i)
-// console.log(ans)
+const arr1 = [1,2,3,4,5]
+const ans = arr1.map((e,i) => e*i)
+console.log(ans)
 
 //create an array of numbers and return a new array showing boolean value according to the number in the array is even or not
 //[2,4,5,9,6,70]
@@ -32,8 +32,8 @@
 
 //create a function that takes array of string and returns the array which shows the count of each string present in the passed array.
 
-const arr = ['apple', 'banana', 'mango', 'orange', 'papaya']
-const students = ['Sushil', 'Rachana', 'Bikash', 'Paridhi', 'Kaushal']
-const strArrLength = change => change.map(e => e.length)
-console.log(strArrLength(arr))
-console.log(strArrLength(students))
+// const arr = ['apple', 'banana', 'mango', 'orange', 'papaya']
+// const students = ['Sushil', 'Rachana', 'Bikash', 'Paridhi', 'Kaushal']
+// const strArrLength = change => change.map(e => e.length)
+// console.log(strArrLength(arr))
+// console.log(strArrLength(students))
