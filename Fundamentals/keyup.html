@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key_Up</title>
+</head>
+<body>
+    <input type="password" id="input" />
+    <p id="para"></p>
+
+    <script>
+        const input = document.getElementById('input')
+        const para = document.getElementById('para')
+        input.addEventListener('keyup' ,()=>{
+            //.value property is used to get value from any input fields
+            // const inputValue = input.value
+           para.textContent = input.value
+        })
+    </script>
+</body>
+</html>
