@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    
+    <script>
+        // localStorage.setItem('data', 'Hello Form The Local Storage')
+        // const show = localStorage.getItem('data')
+        // document.write(show)
+
+        let details = {
+            "first_name": "Ram",
+            "last_name": "Shah",
+            "email": "ramshah123@gmail.com"
+        }
+
+        //1. Convert JSON data to string (local storage can only store value in string/ plain text)
+        const obj_to_str = JSON.stringify(details)
+        document.write(obj_to_str)
+
+        //2. Store the stringified JSON (JSON that has been converted into string)
+        localStorage.setItem('info', obj_to_str)
+        console.log(obj_to_str)
+
+        //3. Get the data using key. The data we access is JSON that is in the form of string
+        const data = localStorage.getItem('info')
+
+        //4. Now, you have the object. Use the values of the object where necessary
+        const str_to_obj = JSON.parse(data)
+        // console.log(str_to_obj)
+        // console.log(typeof str_to_obj)
+        // console.log(str_to_obj.first_name)
+    </script>
+</body>
+</html>
