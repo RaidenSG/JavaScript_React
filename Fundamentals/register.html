@@ -9,22 +9,35 @@
 
 </head>
 <body>
-    <div class="container">
+    
+    <form class="container" onsubmit="return validForm()">
         <h1>Register Form</h1>
         <div class="inputs">
             <h3>FirstName</h3>
-            <input type="text" name="" id="first_name">
+            <input type="text" name="" id="first_name" class="form-control" >
+            <span id="fnamemsg"></span>
+
             <h3>LastName</h3>
-            <input type="text" name="" id="last_name">
+            <input type="text" name="" id="last_name" class="form-control">
+            <span id="lnamemsg"></span>
+
             <h3>Email</h3>
-            <input type="email" name="" id="email">
+            <input type="email" name="" id="email" class="form-control" >
+            <span id="emailmsg"></span>
+
             <h3>Password</h3>
-            <input type="password" name="" id="password">
+            <input type="password" name="" id="password" class="form-control" >
+            <span id="passwordmsg"></span>
+
             <h3>Confirm Password</h3>
-            <input type="password" name="" id="confirm_password">
+            <input type="password" name="" id="confirm_password" class="form-control">
+            <span id="cpassword"></span>
         </div>
         
-        <button id="btn">Register</button>
+        <button id="btn" type="submit" value="register">Register</button>
+    </form>
     </div>
+
+    <script src="register.js"></script>
 </body>
 </html>

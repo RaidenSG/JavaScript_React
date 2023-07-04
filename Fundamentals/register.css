@@ -8,13 +8,14 @@ body{
     background-color: #FCF9BE;
 }
 .container{
+    padding: 10px;
     background-color: #FCE2DB;
     border-radius: 10px;
     border: none;
     width: 34%;
-    height: 633px;
+    /* height: 633px; */
     position: absolute;
-    top: 10%;
+    top: 7%;
     left: 32%;
     box-shadow: 0 0 10px ;
 }
