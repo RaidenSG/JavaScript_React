@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO List</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            position: absolute;
+            /* border: 2px solid red; */
+            top: 30%;
+            left: 38%;
+        }
+        input{
+            padding: 4px 9px;
+            font-size: 20px;
+            margin-top: 7px;
+            border-radius: 10px;
+        }
+        button{
+            border-radius: 10px;
+            padding: 7px 16px;
+            margin: 6px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="input">
+        <button class="btn" >Set</button>
+        <button class="btn-2">Reset</button>
+        <div class="containers">
+            <ol class="list"></ol>
+        </div>
+    </div>
+        
+    <script>
+        let arr
+        const data = document.getElementById('input')
+        const btn = document.querySelector('.btn')
+        const btn2 = document.querySelector('.btn-2')
+        const para = document.querySelector('.list')
+        let result = ""
+        let reset = ''
+        btn.addEventListener('click', () => {
+                result += `<li>${data.value}</li>`
+                // console.log('Clicked')
+                
+                localStorage.setItem('datas',result)
+                const get = localStorage.getItem('datas',result)
+                para.innerHTML = get
+                data.value = ''
+            })
+        btn2.addEventListener('click', () => {
+                localStorage.removeItem('datas',result)
+                para.innerHTML = reset
+                result = ''
+        })
+            // const resetAll = (reset) => {
+            //     data.value = 
+            // }
+        
+    </script>
+</body>
+</html>
