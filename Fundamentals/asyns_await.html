@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        let news = [
+            {newsTitle: 'First Title', content: 'This is first content'},
+            {newsTitle: 'Second Title', content: 'This is second content'},
+            {newsTitle: 'Third Title', content: 'This is third content'}
+        ]
+
+        const showNews= () => {
+            setTimeout(()=>{
+                let result = ''
+                news.forEach(post => {
+                    result += `<li>${post.newsTitle}</li>`
+                });
+                document.querySelector('div').innerHTML = result
+            }, 3000)
+        }
+        showNews()
+        //create function addNews that returns a promise
+        const addNews = (newsData) => {
+            return new Promise((resolve, reject) => {
+                setTimeout(()=>{
+                    news.push(newsData)
+                    let error = true
+                    if(!error){
+                        resolve()
+                    }else{
+                        reject('Error: Something went wrong')
+                    }
+                },6000)
+            })
+        }
+
+        // addNews({ newsTitle: 'Forth Title', content: 'This is Fourth content'})
+        
+        const asyncFunc = async () => {
+            try{
+                await addNews({ newsTitle: 'Forth Title', content: 'This is Fourth content'})
+                showNews()
+            }
+            catch(err){
+                document.write(err)
+            }
+        }
+
+        asyncFunc()
+    </script>
+</body>
+</html>
