@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous</title>
+</head>
+<body>
+    <!-- <div>ok</div> -->
+    <div class="img"></div>
+    <!-- <img src="" alt="" id="img"> -->
+    <script>
+        const p = document.querySelector('div')
+        const img= document.querySelector('#img')
+        // setTimeout(()=>{
+
+        //    p.textContent = 'After working'
+        //     // alert('working')
+        // },3000)
+
+        // p.style.color = 'red'
+
+            img.src = 'attack.jpg';
+            img.addEventListener('load', ()=>{
+                img.classList.add('fadeIn');
+            });
+            p.style.width = '300px'
+    </script>
+</body>
+</html>
