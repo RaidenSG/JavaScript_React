@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #E3F2FD;
+    font-weight: 900;
+}
+.select-menu{
+    width:40vh;
+    margin: 30vh auto
+}
+.select-menu .select-btn{
+    display: flex;
+    height: 6vh;
+    background-color: #fff;
+    padding: 1rem;
+    font-size: 1.2rem;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.select-menu .options{
+    position: relative;
+    padding: 1.05rem;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.options .option{
+    display: flex;
+    height: 5vh;
+    cursor: pointer;
+    padding: 0 1rem;
+    border-radius: 8px;
+    align-items: center;
+    background-color: #fff;
+}
+.options .option:hover{
+    background-color: #F2F2F2;
+}
+.option i{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.option .option-text{
+    font-size: 1rem;
+    color: #333;
+}
+
