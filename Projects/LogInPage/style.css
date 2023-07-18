@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    
+    /* padding: 20px; */
+}
+button{
+    font-size: 13px;
+    padding: 6px 14px;
+    font-weight: 610;
+    border-radius: 4px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+.left{
+    display: flex;
+    box-sizing: content-box;
+    padding: 12px 0;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.show-login{
+    display: flex;
+    align-items: center;
+    margin-left: 14px;
+    font-size: 15px;
+}
+#btn-icon{
+    margin-top: 5px;
+}
+.recordings{
+    display: flex;
+    align-items: center;
+}
+.recordings p{
+    margin-left: 5px;
+}
+
+.right{
+    display: flex;
+    box-sizing: content-box;
+    padding: 12px 0;
+    align-items: center;
+    margin-right: 20px;
+}
+ion-icon{
+    font-size: 20px;
+    margin-left: 16px;
+    margin-top: 3px;
+}
+#copy-btn{
+    border: 1px solid transparent;
+    color: white;
+    background-color: #8169ff;
+    margin-left: 22px;
+    
+    
+}
+#login-btn{
+    margin-left: 14px;
+    border: 0.5px solid rgba(0, 0, 0, 0.251);
+    
+}
+.back{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:686px;
+    font-family: Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+}
+.main{
+    width: 64%;
+    height: 100%;
+    display: flex;
+    background-color: #fff;
+    position: relative;
+}
+
+.welcome{
+    background-color: #8352d3;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    width: 60%;
+    color: white;
+}
+.content{
+    position: relative;
+    top: 9%;
+    left: 5%;
+}
+.content h1{
+    font-size: 42px;
+}
+.content p{
+    font-size: 22px;
+    margin-right: 3px;
+}
+#signup-left{
+    position: inherit;
+    top: 76px;
+    left: 39px;
+    padding: 6px 53px;
+    font-size: 22px;
+    font-weight: 450;
+    border-radius: 4px;
+    border: none;
+}
+.detail{
+    position :absolute;
+    top: 12%;
+    right: 4%;
+    /* background-color: red; */
+    width: 46%;
+   
+}
+#lastname{
+    margin-left: 40px;
+}
+.detail h1{
+    margin-left: 68px;
+    font-size: 40px;
+}
+input{
+    margin-top: 43px;
+    border: 1.3px solid black;
+}
+.detail .name input{
+    width: 45%;
+    padding: 14px 5px; 
+}
+.detail input{
+    font-size: 15px;
+    
+    width: 100%;
+    padding: 15px 5px;
+}
+
+#signup-right{
+    position: relative;
+    top: 72px;
+    left: 61px;
+    width: 59%;
+    font-size: 27px;
+    padding: 8px 12px;
+    background-color: #be4bdb;
+    color: #fff;
+    border: none;
+}
+
+#footer{
+    width: 12%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 16px;
+    right: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 3px 0 3px 0;
+    background-color: #fff;
+    border:none ;
+    text-decoration: none;
+    color: black;
+}
